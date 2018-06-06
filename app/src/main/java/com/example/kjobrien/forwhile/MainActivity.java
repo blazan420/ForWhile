@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final TextView txtStart = (TextView)findViewById(R.id.txtStart);
+        final TextView txtI = (TextView)findViewById(R.id.txtI);
         Button btnLoop = (Button)findViewById(R.id.btnLoop);
 
         btnLoop.setOnClickListener(new View.OnClickListener() {
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // -------------for LOOP----------
                 /* for (int i = 0; i <= 10; i++) {
-                    txtStart.setText(i + "");
+                    txtStart.setText(i + "");*/
 
 
 
@@ -35,17 +36,22 @@ public class MainActivity extends AppCompatActivity {
                     txtStart.setText(i + "");
                     i++;
 
-                }*/
+                }
+
+                txtI.setText(i + "");
 
 
                 // ------------ DO WHILE LOOP ------------
-                int y = 0;
+                /*int y = 40;
 
                 do{
                     txtStart.setText(y + "");
                     y++;
 
-                } while (y <= 15);
+                } while (y <= 15);*/
+
+
+
             }
         });
     }
