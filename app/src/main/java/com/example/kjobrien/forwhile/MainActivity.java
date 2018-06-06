@@ -2,6 +2,7 @@ package com.example.kjobrien.forwhile;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView txtStart = (TextView)findViewById(R.id.txtStart);
         final TextView txtI = (TextView)findViewById(R.id.txtI);
         final TextView txtSwitch = (TextView)findViewById(R.id.txtSwitch);
-        Button btnSwitch = (Button)findViewById(R.id.btnSwitch;)
+        Button btnSwitch = (Button)findViewById(R.id.btnSwitch);
         Button btnLoop = (Button)findViewById(R.id.btnLoop);
 
         btnLoop.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
                 } while (y <= 15);*/
 
+                for (int x = 0; x < 30; x++) {
+
+                    Log.i("LOG", x);
+
+                }
+
 
 
 
@@ -63,16 +70,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String nameString = "Animal Name";
+                /*String nameString = "crap";
 
                 switch (nameString) {
 
-                    case "Animal 1:":
+                    case "Animal1":
                         txtSwitch.setText("Our Animal name is animal1");
                         break;
+                    case "Lion":
+                        txtSwitch.setText("The name of our animal is Lion");
+                        break;
+
+                        default:
+                           txtSwitch.setText("The name of our animal is Something Else");
 
 
-                }
+
+                }*/
+
+
 
             }
         });
