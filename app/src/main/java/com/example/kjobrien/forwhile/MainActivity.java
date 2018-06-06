@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView txtStart = (TextView)findViewById(R.id.txtStart);
         final TextView txtI = (TextView)findViewById(R.id.txtI);
+        final TextView txtSwitch = (TextView)findViewById(R.id.txtSwitch);
+        Button btnSwitch = (Button)findViewById(R.id.btnSwitch;)
         Button btnLoop = (Button)findViewById(R.id.btnLoop);
 
         btnLoop.setOnClickListener(new View.OnClickListener() {
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                // -------------WHILE LOOP--------------
+                /*// -------------WHILE LOOP--------------
                 int i = 0;
 
                 while (i <= 10) {
@@ -51,6 +53,26 @@ public class MainActivity extends AppCompatActivity {
                 } while (y <= 15);*/
 
 
+
+
+
+            }
+        });
+
+        btnSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String nameString = "Animal Name";
+
+                switch (nameString) {
+
+                    case "Animal 1:":
+                        txtSwitch.setText("Our Animal name is animal1");
+                        break;
+
+
+                }
 
             }
         });

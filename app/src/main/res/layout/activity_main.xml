@@ -20,10 +20,10 @@
             android:text="Start" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp" />
+            android:layout_margin="40dp" />
 
         <Button
             android:id="@+id/btnLoop"
@@ -32,15 +32,35 @@
             android:text="start thr loop" />
 
         <TextView
+            android:id="@+id/txtI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value of i" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/txtSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value os Switch Statment"
+            android:textSize="22sp" />
+
+        <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp" />
 
-        <TextView
-            android:id="@+id/txtI"
+        <Button
+            android:id="@+id/btnSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Value of i" />
+            android:text="start the switch" />
+
     </LinearLayout>
 </RelativeLayout>
