@@ -55,9 +55,19 @@ public class MainActivity extends AppCompatActivity {
 
                 for (int x = 0; x < 30; x++) {
 
-                    Log.i("LOG", x);
+                    /*if (x == 10) {
+                        break;
+                    }*/
+
+                    if(x == 5) {
+                        continue;
+                    }
+
+                    Log.i("LOG", x + "");
 
                 }
+
+
 
 
 
