@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final TextView txtStart = (TextView)findViewById(R.id.txtStart);
-        final TextView txtI = (TextView)findViewById(R.id.txtI);
-        final TextView txtSwitch = (TextView)findViewById(R.id.txtSwitch);
-        Button btnSwitch = (Button)findViewById(R.id.btnSwitch);
-        Button btnLoop = (Button)findViewById(R.id.btnLoop);
+        final TextView txtStart = (TextView) findViewById(R.id.txtStart);
+        final TextView txtI = (TextView) findViewById(R.id.txtI);
+        final TextView txtSwitch = (TextView) findViewById(R.id.txtSwitch);
+        Button btnSwitch = (Button) findViewById(R.id.btnSwitch);
+        Button btnLoop = (Button) findViewById(R.id.btnLoop);
 
         btnLoop.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,13 +53,36 @@ public class MainActivity extends AppCompatActivity {
 
                 } while (y <= 15);*/
 
-                for (int x = 0; x < 30; x++) {
+                /*for (int x = 0; x < 30; x++) {
+
+                    if (x == 10) {
+                        break;
+                    }
+
+                    Log.i("LOG", x + "");
+                }
 
                     /*if (x == 10) {
                         break;
                     }*/
 
-                    if(x == 5) {
+                    /*if(x == 5) {
+                        continue;
+                    }
+
+                    Log.i("LOG", x + "");*/
+
+                //for (int x = 0; x <30; x++) {
+
+                //  Log.i("LOG",  x + "");*/
+
+                for (int x = 0; x <30; x++) {
+
+                    /*if (x == 10) {
+                        break;
+                    }*/
+
+                    if(x == 5){
                         continue;
                     }
 
@@ -68,13 +91,9 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-
-
-
-
-
             }
         });
+
 
         btnSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
 
 
                 }*/
-
 
 
             }
